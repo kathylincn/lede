@@ -37,7 +37,7 @@ jobs:
           mkdir openwrt-packages
           cd openwrt-packages
           if [ ! -d "openwrt" ]; then
-            git clone https://github.com/coolsnowwolf openwrt
+            git clone https://github.com/coolsnowwolf/openwrt.git
             cd openwrt
           else
             cd openwrt
