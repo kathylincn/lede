@@ -324,8 +324,8 @@ jobs:
           find dl -size -1024c -exec rm -f {} \;
       - name: 编译固件
         run: |
-          echo -e "$(nproc) thread build."
-          make -j$(nproc) V=s
+        # echo -e "$(nproc) thread build."
+          make -j$(nproc) || make -j1 V=s
       - name : 上传固件
         uses: actions/upload-artifact@master
         with:
