@@ -74,12 +74,12 @@ jobs:
           
       - name: 替换更新 passwall 和 ssrplus+
         run: |
-          rm -rf package/openwrt-packages/luci-app-passwall && svn co https://github.com/Lienol/openwrt-package/trunk/lienol/luci-app-passwall package/openwrt-packages/luci-app-passwall
+          rm -rf package/openwrt-packages/luci-app-passwall && svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-passwall package/openwrt-packages/luci-app-passwall
           rm -rf package/openwrt-packages/luci-app-ssr-plus && svn co https://github.com/fw876/helloworld package/openwrt-packages/helloworld
           
       - name: 添加 passwall 依赖库
         run: |
-          svn co https://github.com/Lienol/openwrt-package/trunk/package package/small
+          svn co https://github.com/kenzok8/trunk/small package/small
           
       - name: 替换更新 haproxy 默认版本
         run: |
