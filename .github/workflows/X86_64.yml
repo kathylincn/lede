@@ -79,7 +79,7 @@ jobs:
           
       - name: 添加 passwall 依赖库
         run: |
-          svn co https://github.com/kenzok8/trunk/small package/small
+          git clone https://github.com/kenzok8/small.git
           
       - name: 替换更新 haproxy 默认版本
         run: |
