@@ -41,12 +41,9 @@ jobs:
             cd openwrt
           else
             cd openwrt
-            # 还原版本
-            git reset HEAD --hard
-            # git 删除未跟踪文件
-            git clean -fd
-            # 更新代码
-            git pull
+            git reset HEAD --hard # 还原版本
+            git clean -fd # git 删除未跟踪文件
+            git pull # 更新代码
           fi
           
           #git clone https://github.com/openwrt-develop/luci-theme-atmaterial.git
@@ -77,7 +74,7 @@ jobs:
           
       - name: 替换更新 passwall 和 ssrplus+
         run: |
-      #    rm -rf package/openwrt-packages/luci-app-passwall && svn co https://github.com/Lienol/openwrt-package/trunk/lienol/luci-app-passwall package/openwrt-packages/luci-app-passwall
+          # rm -rf package/openwrt-packages/luci-app-passwall && svn co https://github.com/Lienol/openwrt-package/trunk/lienol/luci-app-passwall package/openwrt-packages/luci-app-passwall
           rm -rf package/openwrt-packages/luci-app-passwall && svn co https://github.com/xiaorouji/openwrt-passwall/tree/main/luci-app-passwall package/openwrt-packages/luci-app-passwall
           rm -rf package/openwrt-packages/luci-app-ssr-plus && svn co https://github.com/fw876/helloworld package/openwrt-packages/helloworld
           
