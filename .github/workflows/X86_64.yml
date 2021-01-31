@@ -57,7 +57,6 @@ jobs:
           
       - name: 添加第三方软件包
         run: |
-          git clone https://github.com/kenzok8/openwrt-packages.git package/openwrt-packages
           svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-openclash package/luci-app-openclash
           svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-eqos package/luci-app-eqos
           svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-adguardhome package/luci-app-adguardhome
