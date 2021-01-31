@@ -64,6 +64,7 @@ jobs:
           cd openwrt-packages
           git clone https://github.com/openwrt-develop/luci-theme-atmaterial.git
           git clone https://github.com/pexcn/openwrt-chinadns-ng.git
+          git clone https://github.com/garypang13/luci-app-xlnetacc.git
       - name: 更新提要
         run: |
           ./scripts/feeds update -a
