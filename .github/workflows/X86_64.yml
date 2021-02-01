@@ -36,19 +36,10 @@ jobs:
           cd package
           mkdir openwrt-packages
           cd openwrt-packages
-          if [ ! -d "openwrt" ]; then
-            git clone https://github.com/coolsnowwolf/openwrt.git
-            cd openwrt
-          else
-            cd openwrt
-            git reset HEAD --hard # 还原版本
-            git clean -fd # git 删除未跟踪文件
-            git pull # 更新代码
-          fi
-          
-          #git clone https://github.com/openwrt-develop/luci-theme-atmaterial.git
-          #git clone https://github.com/pexcn/openwrt-chinadns-ng.git
-          #git clone https://github.com/garypang13/luci-app-xlnetacc.git
+          git clone https://github.com/coolsnowwolf/lede.git
+          git clone https://github.com/openwrt-develop/luci-theme-atmaterial.git
+          git clone https://github.com/pexcn/openwrt-chinadns-ng.git
+          git clone https://github.com/garypang13/luci-app-xlnetacc.git
           
       - name: 更新并安装源
         run: |
