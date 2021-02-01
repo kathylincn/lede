@@ -165,6 +165,7 @@ jobs:
           #CONFIG_PACKAGE_luci-app-verysync=y
           CONFIG_PACKAGE_luci-app-webadmin=y
           #CONFIG_PACKAGE_luci-app-wireguard=y
+          CONFIG_PACKAGE_luci-app-openclash=y
           CONFIG_PACKAGE_luci-app-乳酸菌饮料-plus=y
           CONFIG_PACKAGE_luci-app-unblockmusic=y
           CONFIG_PACKAGE_luci-app-vlmcsd=y
